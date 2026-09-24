@@ -1,0 +1,568 @@
+
+:root {
+  --primary-color: #2563eb;
+  --secondary-color: #e2e8f0;
+  --dark-color: #1e293b;
+  --light-bg: #f8fafc;
+  --border-color: #cbd5e1;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --font-family: system-ui, -apple-system, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--light-bg);
+  color: var(--dark-color);
+  padding: var(--spacing-lg);
+}
+
+.task-section {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: var(--spacing-lg);
+  margin-bottom: 40px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.task-section h2 {
+  margin-bottom: var(--spacing-md);
+  padding-bottom: var(--spacing-sm);
+  border-bottom: 2px solid var(--secondary-color);
+}
+
+/* TASK 1*/
+
+.mondrian-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 8px; 
+  background-color: #000000; 
+  padding: 8px;
+  
+  width: 100%;
+  max-width: 80vh;
+  aspect-ratio: 1 / 1; 
+  margin: 0 auto;
+}
+
+.block {
+  width: 100%;
+  height: 100%;
+}
+
+
+.blue {
+  background-color: #1d4ed8;
+  grid-column: 1 / 3;
+  grid-row: 1 / 4;
+}
+
+.white-top {
+  background-color: #f1f5f9;
+  grid-column: 3 / 7;
+  grid-row: 1 / 2;
+}
+
+.yellow {
+  background-color: #eab308;
+  grid-column: 3 / 5;
+  grid-row: 2 / 4;
+}
+
+.white-right-top {
+  background-color: #f1f5f9;
+  grid-column: 5 / 7;
+  grid-row: 2 / 5;
+}
+
+.red {
+  background-color: #dc2626;
+  grid-column: 1 / 4;
+  grid-row: 4 / 7;
+}
+
+.black {
+  background-color: #0f172a;
+  grid-column: 4 / 5;
+  grid-row: 4 / 7;
+}
+
+.white-right-bottom {
+  background-color: #f1f5f9;
+  grid-column: 5 / 7;
+  grid-row: 5 / 7;
+}
+
+/*TASK 2*/
+
+.components-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+.component {
+    margin-bottom: 40px;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+
+/* Buttons */
+
+button {
+    border: 1px solid #333;
+    background-color: white;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.primary {
+    background-color: #2563eb;
+    color: white;
+    border-color: #2563eb;
+}
+
+
+/* 1. Navigation Bar */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.nav-links a {
+    color: #333;
+    text-decoration: none;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+}
+
+
+/* 2. Cards */
+
+.cards {
+    display: flex;
+    gap: 20px;
+    align-items: stretch;
+}
+
+.card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.card p {
+    line-height: 1.5;
+}
+
+.card button {
+    margin-top: auto;
+    align-self: flex-start;
+}
+
+
+/* 3. Pagination */
+
+.pagination {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.pages {
+    display: flex;
+    gap: 5px;
+    margin: 0 auto;
+}
+
+.pages a {
+    text-decoration: none;
+    color: #333;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.pages .active {
+    background-color: #2563eb;
+    color: white;
+}
+
+.results {
+    margin-left: auto;
+    white-space: nowrap;
+}
+
+
+/* 4. Comment */
+
+.comment {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.avatar {
+    flex: 0 0 auto;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2563eb;
+    color: white;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+.comment-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.comment-content h3 {
+    margin-top: 0;
+}
+
+.comment-content p {
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+
+/* 5. Pricing Table */
+
+.pricing {
+    display: flex;
+    align-items: stretch;
+    gap: 20px;
+}
+
+.plan {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    position: relative;
+}
+
+.plan.recommended {
+    padding-top: 40px;
+    border: 2px solid #2563eb;
+}
+
+.plan h3 {
+    margin-top: 0;
+}
+
+.price {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.plan ul {
+    padding-left: 20px;
+    line-height: 1.8;
+}
+
+.plan button {
+    margin-top: auto;
+    align-self: flex-start;
+}
+
+.badge {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    color: #2563eb;
+    font-weight: bold;
+}
+
+
+/* Responsive design */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .nav-buttons {
+        margin-left: 0;
+    }
+
+    .cards {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        flex-basis: 100%;
+    }
+
+    .pagination {
+        flex-wrap: wrap;
+    }
+
+    .pages {
+        margin: 0;
+    }
+
+    .results {
+        margin-left: 0;
+    }
+
+    .pricing {
+        flex-wrap: wrap;
+    }
+
+    .plan {
+        flex-basis: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* TASK 3 */
+
+
+
+h1 {
+    text-align: center;
+    margin: 0 0 50px;
+    font-size: 36px;
+}
+
+
+
+section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto 80px;
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+}
+
+section > h2 {
+    margin: 0 0 25px;
+    text-align: center;
+    font-size: 26px;
+}
+
+
+
+.article {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.article img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.article-content {
+    padding: 15px;
+    flex: 1;
+}
+
+.article h3 {
+    margin: 0 0 10px;
+    font-size: 20px;
+}
+
+.article p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.article time {
+    display: block;
+    padding: 0 15px 15px;
+    color: #777;
+    font-size: 14px;
+}
+
+
+/* =========================
+   1. GRID LAYOUT
+   ========================= */
+
+.grid-layout {
+    display: grid;
+
+    /* Columns automatically adapt to window width */
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(220px, 1fr)
+    );
+
+    gap: 20px;
+}
+
+
+/* =========================
+   2. LIST LAYOUT
+   ========================= */
+
+.list-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.list-layout .article {
+    display: grid;
+
+    /* Image | Text | Date */
+    grid-template-columns: 180px 1fr auto;
+
+    align-items: center;
+    gap: 20px;
+}
+
+.list-layout .article img {
+    width: 180px;
+    height: 120px;
+}
+
+.list-layout .article-content {
+    padding: 15px 0;
+}
+
+.list-layout .article time {
+    padding: 15px;
+    white-space: nowrap;
+}
+
+
+/* =========================
+   3. MAGAZINE LAYOUT
+   ========================= */
+
+.magazine-layout {
+    display: grid;
+
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(200px, 1fr)
+    );
+
+    grid-auto-rows: minmax(180px, auto);
+
+    gap: 20px;
+}
+
+
+/* Main article */
+
+.magazine-layout .article:first-child {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.magazine-layout .article:first-child img {
+    height: 300px;
+}
+
+.magazine-layout .article:first-child h3 {
+    font-size: 28px;
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 25px;
+    text-align: center;
+    background: white;
+    border-radius: 12px;
+}
+
+
+
+.grid-layout,
+.list-layout,
+.magazine-layout {
+    width: 100%;
+}
+
+.article {
+    min-width: 0;
+}
+
+.article-content {
+    min-width: 0;
+}
+

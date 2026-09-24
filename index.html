@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 2 - Advanced CSS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- TASK 1-->
+  <section class="task-section">
+    <h2>Task 1. Geometric Composition</h2>
+    <div class="mondrian-grid">
+      <div class="block blue"></div>
+      <div class="block white-top"></div>
+      <div class="block yellow"></div>
+      <div class="block white-right-top"></div>
+      <div class="block red"></div>
+      <div class="block black"></div>
+      <div class="block white-right-bottom"></div>
+    </div>
+  </section>
+
+
+
+
+  
+  <!-- TASK 2 -->
+  <section class="task-section">
+    <h2>Task 2. Component Library</h2>
+    <div class="components-container">
+      
+
+        <!-- 1. Navigation Bar -->
+        <section class="component">
+            <h2>1. Navigation Bar</h2>
+
+            <nav class="navbar">
+                <div class="logo">MyLibrary</div>
+
+                <div class="nav-links">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Contact</a>
+                </div>
+
+                <div class="nav-buttons">
+                    <button>Log in</button>
+                    <button class="primary">Sign up</button>
+                </div>
+            </nav>
+        </section>
+
+
+        <!-- 2. Cards -->
+        <section class="component">
+            <h2>2. Cards</h2>
+
+            <div class="cards">
+
+                <article class="card">
+                    <h3>Web Design</h3>
+                    <p>
+                        Learn how to create simple and beautiful websites
+                        using HTML and CSS.
+                    </p>
+                    <button class="primary">Learn more</button>
+                </article>
+
+                <article class="card">
+                    <h3>Programming</h3>
+                    <p>
+                        Practice programming and improve your problem-solving
+                        skills with different exercises and projects.
+                    </p>
+                    <button class="primary">Learn more</button>
+                </article>
+
+                <article class="card">
+                    <h3>Development</h3>
+                    <p>
+                        Build modern applications and discover useful
+                        development tools.
+                    </p>
+                    <button class="primary">Learn more</button>
+                </article>
+
+            </div>
+        </section>
+
+
+        <!-- 3. Pagination -->
+        <section class="component">
+            <h2>3. Pagination</h2>
+
+            <div class="pagination">
+
+                <button>←</button>
+
+                <div class="pages">
+                    <a href="#">1</a>
+                    <a href="#" class="active">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                </div>
+
+                <button>→</button>
+
+                <span class="results">Showing 1–10 of 50 results</span>
+
+            </div>
+        </section>
+
+
+        <!-- 4. Comment -->
+        <section class="component">
+            <h2>4. Comment</h2>
+
+            <div class="comment">
+
+                <div class="avatar">D</div>
+
+                <div class="comment-content">
+                    <h3>Dilnaz</h3>
+                    <p>
+                        This component library is very useful. The text can
+                        become longer and it will wrap correctly beside the
+                        avatar without going underneath it.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- 5. Pricing -->
+        <section class="component">
+            <h2>5. Pricing Table</h2>
+
+            <div class="pricing">
+
+                <div class="plan">
+                    <h3>Basic</h3>
+                    <p class="price">$5</p>
+                    <p>For beginners</p>
+
+                    <ul>
+                        <li>1 project</li>
+                        <li>Basic support</li>
+                        <li>5 GB storage</li>
+                    </ul>
+
+                    <button>Choose plan</button>
+                </div>
+
+
+                <div class="plan recommended">
+                    <span class="badge">Recommended</span>
+
+                    <h3>Pro</h3>
+                    <p class="price">$15</p>
+                    <p>For students and professionals</p>
+
+                    <ul>
+                        <li>10 projects</li>
+                        <li>Priority support</li>
+                        <li>50 GB storage</li>
+                        <li>Advanced tools</li>
+                    </ul>
+
+                    <button class="primary">Choose plan</button>
+                </div>
+
+
+                <div class="plan">
+                    <h3>Premium</h3>
+                    <p class="price">$30</p>
+                    <p>For teams</p>
+
+                    <ul>
+                        <li>Unlimited projects</li>
+                        <li>Priority support</li>
+                        <li>100 GB storage</li>
+                    </ul>
+
+                    <button>Choose plan</button>
+                </div>
+
+            </div>
+        </section>
+
+    </div>
+
+
+ 
+
+
+<!-- TASK 3 -->
+
+<section class="task-section task3-section">
+
+    <h2>Task 3. Three Layouts, One Markup</h2>
+
+
+    <!-- 1. GRID LAYOUT -->
+
+    <div class="layout-demo">
+
+        <h3 class="layout-title">1. Grid Layout</h3>
+
+        <div class="articles grid-layout">
+
+            <article class="article">
+                <img src="https://picsum.photos/300/200?random=1" alt="Music">
+                <div class="article-content">
+                    <h3>New Music Releases</h3>
+                    <p>Artists are releasing new songs and exciting projects this month.</p>
+                </div>
+                <time>Sep 1, 2026</time>
+            </article>
+
+            <article class="article">
+                <img src="https://picsum.photos/300/200?random=2" alt="Music">
+                <div class="article-content">
+                    <h3>Brent Faiyaz Returns</h3>
+                    <p>Brent Faiyaz continues to attract listeners with his unique R&B sound.</p>
+                </div>
+                <time>Sep 3, 2026</time>
+            </article>
+
+            <article class="article">
+                <img src="https://picsum.photos/300/200?random=3" alt="Music">
+                <div class="article-content">
+                    <h3>Top Albums</h3>
+                    <p>These albums are becoming popular among music fans around the world.</p>
+                </div>
+                <time>Sep 5, 2026</time>
+            </article>
+
+            <article class="article">
+                <img src="https://picsum.photos/300/200?random=4" alt="Music">
+                <div class="article-content">
+                    <h3>New R&B Artists</h3>
+                    <p>Several young artists are bringing fresh ideas to modern R&B.</p>
+                </div>
+                <time>Sep 7, 2026</time>
+            </article>
+
+            <article class="article">
+                <img src="https://picsum.photos/300/200?random=5" alt="Music">
+                <div class="article-content">
+                    <h3>Music Festivals</h3>
+                    <p>Music festivals bring together artists and thousands of fans.</p>
+                </div>
+                <time>Sep 9, 2026</time>
+            </article>
+
+            <article class="article">
+                <img src="https://picsum.photos/300/200?random=6" alt="Music">
+                <div class="article-content">
+                    <h3>Studio Stories</h3>
+                    <p>Artists share stories about recording their latest projects.</p>
+                </div>
+                <time>Sep 11, 2026</time>
+            </article>
+
+        </div>
+
+    </div>
+
+
+    <!-- 2. LIST LAYOUT -->
+
+    <div class="layout-demo">
+
+        <h3 class="layout-title">2. List Layout</h3>
+
+        <div class="articles list-layout">
+
+            <article class="article">
+                <img src="https://picsum.photos/300/200?random=1" alt="Music">
+                <div class="article-content">
+                    <h3>New Music Releases</h3>
+                    <p>Artists are releasing new songs and exciting projects this month.</p>
+                </div>
+                <time>Sep 1, 2026</time>
+            </article>
+
+            <article class="article">
+                <img src="https://picsum.photos/300/200?random=2" alt="Music">
+                <div class="article-content">
+                    <h3>Brent Faiyaz Returns</h3>
+                    <p>Brent Faiyaz continues to attract listeners with his unique R&B sound.</p>
+                </div>
+                <time>Sep 3, 2026</time>
+            </article>
+
+            <article class="article">
+                <img src="https://picsum.photos/300/200?random=3" alt="Music">
+                <div class="article-content">
+                    <h3>Top Albums</h3>
+                    <p>These albums are becoming popular among music fans around the world.</p>
+                </div>
+                <time>Sep 5, 2026</time>
+            </article>
+
+            <article class="article">
+                <img src="https://picsum.photos/300/200?random=4" alt="Music">
+                <div class="article-content">
+                    <h3>New R&B Artists</h3>
+                    <p>Several young artists are bringing fresh ideas to modern R&B.</p>
+                </div>
+                <time>Sep 7, 2026</time>
+            </article>
+
+            <article class="article">
+                <img src="https://picsum.photos/300/200?random=5" alt="Music">
+                <div class="article-content">
+                    <h3>Music Festivals</h3>
+                    <p>Music festivals bring together artists and thousands of fans.</p>
+                </div>
+                <time>Sep 9, 2026</time>
+            </article>
+
+            <article class="article">
+                <img src="https://picsum.photos/300/200?random=6" alt="Music">
+                <div class="article-content">
+                    <h3>Studio Stories</h3>
+                    <p>Artists share stories about recording their latest projects.</p>
+                </div>
+                <time>Sep 11, 2026</time>
+            </article>
+
+        </div>
+
+    </div>
+
+
+    <!-- 3. MAGAZINE LAYOUT -->
+
+    <div class="layout-demo">
+
+        <h3 class="layout-title">3. Magazine Layout</h3>
+
+        <div class="articles magazine-layout">
+
+            <article class="article">
+                <img src="https://picsum.photos/500/400?random=1" alt="Music">
+                <div class="article-content">
+                    <h3>New Music Releases</h3>
+                    <p>Artists are releasing new songs and exciting projects this month.
+                    The latest releases are attracting listeners from all over the world.</p>
+                </div>
+                <time>Sep 1, 2026</time>
+            </article>
+
+            <article class="article">
+                <img src="https://picsum.photos/300/200?random=2" alt="Music">
+                <div class="article-content">
+                    <h3>Brent Faiyaz Returns</h3>
+                    <p>Brent Faiyaz continues to attract listeners with his unique R&B sound.</p>
+                </div>
+                <time>Sep 3, 2026</time>
+            </article>
+
+            <article class="article">
+                <img src="https://picsum.photos/300/200?random=3" alt="Music">
+                <div class="article-content">
+                    <h3>Top Albums</h3>
+                    <p>These albums are becoming popular among music fans.</p>
+                </div>
+                <time>Sep 5, 2026</time>
+            </article>
+
+            <article class="article">
+                <img src="https://picsum.photos/300/200?random=4" alt="Music">
+                <div class="article-content">
+                    <h3>New R&B Artists</h3>
+                    <p>Young artists are bringing fresh ideas to modern R&B.</p>
+                </div>
+                <time>Sep 7, 2026</time>
+            </article>
+
+            <article class="article">
+                <img src="https://picsum.photos/300/200?random=5" alt="Music">
+                <div class="article-content">
+                    <h3>Music Festivals</h3>
+                    <p>Music festivals bring together artists and thousands of fans.</p>
+                </div>
+                <time>Sep 9, 2026</time>
+            </article>
+
+            <article class="article">
+                <img src="https://picsum.photos/300/200?random=6" alt="Music">
+                <div class="article-content">
+                    <h3>Studio Stories</h3>
+                    <p>Artists share stories about recording their latest projects.</p>
+                </div>
+                <time>Sep 11, 2026</time>
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+</body>
+</html>
