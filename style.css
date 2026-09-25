@@ -102,6 +102,8 @@ body {
   grid-row: 5 / 7;
 }
 
+
+
 /*TASK 2*/
 
 .components-container {
@@ -117,8 +119,6 @@ body {
 h2 {
     margin-bottom: 15px;
 }
-
-
 /* Buttons */
 
 button {
@@ -135,8 +135,6 @@ button {
     color: white;
     border-color: #2563eb;
 }
-
-
 /* 1. Navigation Bar */
 
 .navbar {
@@ -171,8 +169,6 @@ button {
     gap: 10px;
     margin-left: auto;
 }
-
-
 /* 2. Cards */
 
 .cards {
@@ -199,8 +195,6 @@ button {
     margin-top: auto;
     align-self: flex-start;
 }
-
-
 /* 3. Pagination */
 
 .pagination {
@@ -235,8 +229,6 @@ button {
     margin-left: auto;
     white-space: nowrap;
 }
-
-
 /* 4. Comment */
 
 .comment {
@@ -275,8 +267,6 @@ button {
     line-height: 1.5;
     margin-bottom: 0;
 }
-
-
 /* 5. Pricing Table */
 
 .pricing {
